@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的学业规划</title>
+    <link rel="stylesheet" href="page3_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section>
+        <div id="header">
+            <h1>我的学业规划</h1>
+            <div>一个合适的学术计划对我们实现我们的目标非常重要目标。 允许学生根据自己的能力
+                和愿望制定战略性的学术路线。因此，我做了个人的学业规划，合理规划自己的大学生活。
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="content">
+            <h2>自我分析</h2>
+            <div>我现在是西安交通大学计算机专业的一名大学生。 我的爱好是编程，我花了很多空闲时间通过
+                在线观看学习各种编程语言教程视频。 此外，除了印尼语，我还精通英语雅思7.5分，
+                但是我的普通话中等，HSK 5级263分。
+            </div>
+            <br>
+            <div>优点: 我是一个勤奋、理性、热情的学生，我总是努力完成我所有的任务以有效的方式尽可能好。
+                我也很善于交际，因为我交了很多朋友, 他们对我也很有帮助。我喜欢听别人的意见，
+                永远不会不尊重他们，因为我认为每个人都可能有不同的视角。
+            </div>
+            <br>
+            <div>弱点: 有时我总是对自己的工作感到焦虑，我总是比较自己的质量与他人合作会使事情变得更加复杂。
+                我也很固执，如果我觉得自己像个答案对我来说没有意义，我会继续询问人们。
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="content">
+            <h2>年度计划</h2>
+            <h3>a. 大一</h3>
+            <div>我的目标是让自己适应大学生活，并通过参与尽可能多地结交朋友在线或离线的学校活动中。
+                第一节课除了数学和物理课。 我打算在假期里学习更多关于编程的知识，
+                尤其是网络和我的朋友一起开发和做项目，并尽可能抓住每一个实习机会。
+            </div>
+            <h3>b. 大二</h3>
+            <div>完成所有基础自然科学课程并开始准备从基础课程过渡到通过询问同一专业的前辈的专业课程。
+                继续提高我在这两个方面的知识电脑和普通话。 尽量选择一些大三到今年的课程，以减轻学习压力明年。
+                最后，假期用于实习或掌握基本的计算机操作。
+            </div>
+            <h3>c. 大三</h3>
+            <div>通过加入校友网络收集公司信息，通过做代码面试做准备Leetcode 问题。
+                尽量选择与数据科学或软件相关的专业课程发展。 重修所有失败的课程（如果能够）。
+            </div>
+            <h3>d. 大四</h3>
+            <div>我的主要目标是确保就业并专注于撰写毕业论文。 我会继续扩大我的社交网络，为融入社会做好充分准备。
+                最后，我会做一个总结我的大学生活，找出我犯的错误，以便更好地规划我的大学生活未来。
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="content">
+            <h2>主要目标</h2>
+            <h3>a.) 扩展社交网络并尽可能多地结交朋友。</h3>
+            <h3>b.) 在大学里学习各种计算机相关的东西，并以优异的成绩毕业。</h3>
+            <h3>c.) 掌握中文，包括流利的说、读和写中文。</h3>
+            <h3>d.) 完成许多项目，如网站和移动应用程序。</h3>
+            <h3>e.) 找一份工作，优先找一份能让我获得很多经验的工作。</h3>
+            <h3>f.) 让父母感到高兴和自豪。</h3>
+            <h3>g.) 保持良好的健康状况。</h3>
+        </div>
+    </section>
+    <footer>
+        <h2>STONE JEN HALIM 2219990177</h2>
+    </footer>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', show);
+        function show() {
+            let target = document.querySelectorAll('.content');
+            for (let i = 0; i < target.length; i++) {
+                let win_height = window.innerHeight;
+                let show_top = target[i].getBoundingClientRect().top;
+                let show_mark = 175;
+
+                if (show_top < win_height - show_mark) {
+                    target[i].classList.add('active');
+                } else {
+                    target[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
